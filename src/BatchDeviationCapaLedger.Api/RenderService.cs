@@ -29,6 +29,25 @@ public static class RenderService
             <div class="src"><div class="src-name">monetization path</div><div class="src-tit">Hosted preview planned · Embedded by engagement</div><p>The free surface proves the operator model; the commercial path is an embedded deviation and CAPA module for regulated biotech quality workflows.</p></div>
           </div>
         </section>
+        <section class="section">
+          <div class="sh"><h2>Board questions this answers</h2><div class="note">release exposure · quality cost · investment</div></div>
+          <div class="stack">
+            <div class="src"><div class="src-name">exposure</div><div class="src-tit">Which batch decisions are still exposed to weak CAPA evidence?</div><p>Root-cause packet status, CAPA owner continuity, effectiveness posture, recurrence pressure, retraining proof, and final disposition stay in one quality lane.</p></div>
+            <div class="src"><div class="src-name">savings</div><div class="src-tit">Where is QA effort being spent on avoidable packet repair?</div><p>The ledger makes repeated missing owners, stale training evidence, and unresolved recurrence patterns visible before they create another batch-review loop.</p></div>
+            <div class="src"><div class="src-name">investment</div><div class="src-tit">Which quality control should be instrumented first?</div><p>Blocking gaps show whether investigation intake, CAPA assignment, effectiveness checks, training proof, or disposition signoff should get the next automation pass.</p></div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="sh"><h2>Evidence model</h2><div class="note">signal · proof · decision</div></div>
+          <table class="ttbl">
+            <thead><tr><th>Signal</th><th>Owner</th><th>Required proof</th><th>Decision supported</th></tr></thead>
+            <tbody>
+              <tr><td><b>Root-cause packet</b></td><td>Manufacturing QA</td><td>Deviation record, investigation summary, impacted lot, disposition note</td><td>Quarantine, rework, or advance batch review</td></tr>
+              <tr><td><b>CAPA effectiveness</b></td><td>Process Excellence</td><td>Corrective action, owner, verification window, recurrence check</td><td>Close CAPA, extend monitoring, or escalate quality risk</td></tr>
+              <tr><td><b>Training and disposition</b></td><td>Quality Systems</td><td>Retraining record, signer, SOP version, final release posture</td><td>Release, hold, or require packet repair</td></tr>
+            </tbody>
+          </table>
+        </section>
         """
     );
 
