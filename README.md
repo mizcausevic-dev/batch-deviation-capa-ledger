@@ -11,6 +11,29 @@ This repo is the public proof surface for that pattern:
 - `Hosted preview planned` for a browser-based deviation and CAPA control plane
 - `Embedded by engagement` for teams that need the routing model inside a regulated biotech quality workflow
 
+## Product depth
+
+Batch Deviation CAPA Ledger turns quality events into a governed release-readiness packet. It gives QA, manufacturing, process excellence, quality systems, and release stakeholders one shared view of deviation evidence before root-cause gaps, unowned CAPAs, recurrence pressure, or missing disposition signoff weaken batch decisions.
+
+- **For executives:** shows where batch release exposure is building and which quality decisions need escalation.
+- **For operators:** maps every deviation or CAPA gap to owner, control family, batch path, and next remediation move.
+- **For technical reviewers:** ships a C# analyzer, minimal API, static proof pages, synthetic fixtures, screenshots, and CI verification.
+
+## What these repos have in common
+
+This is part of the Kinetic Gain control-plane pattern: narrow operating problems packaged as buyer-readable product surfaces with evidence, data contracts, verification routes, screenshots, and deployment metadata.
+
+- named business lane with a board question, operating owner, and remediation motion
+- offline-safe sample data so the surface can prove value without exposing patient, batch, customer, credential, or production system data
+- public page, API routes, analyzer path, README, screenshots, and CI checks that support a real diligence trail
+
+## Operating workflow
+
+1. Ingest synthetic batch snapshots, deviation gaps, and CAPA packets.
+2. Score release-blocking gaps across investigation, ownership, effectiveness, recurrence, training, and disposition.
+3. Route each gap to the owner who can repair it before the next quality checkpoint.
+4. Publish a static operator page and structured JSON endpoints that non-technical and technical reviewers can inspect.
+
 ## What it includes
 
 - ASP.NET Core minimal API in C#

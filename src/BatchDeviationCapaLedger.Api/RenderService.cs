@@ -29,6 +29,7 @@ public static class RenderService
             <div class="src"><div class="src-name">monetization path</div><div class="src-tit">Hosted preview planned · Embedded by engagement</div><p>The free surface proves the operator model; the commercial path is an embedded deviation and CAPA module for regulated biotech quality workflows.</p></div>
           </div>
         </section>
+        {{ProductDepthSection()}}
         <section class="section">
           <div class="sh"><h2>Board questions this answers</h2><div class="note">release exposure · quality cost · investment</div></div>
           <div class="stack">
@@ -169,6 +170,35 @@ public static class RenderService
     private static string VerificationCard(string title) =>
         $$"""<div class="src"><div class="src-name">verification</div><div class="src-tit">{{title}}</div><p>This lane keeps evidence, quality pressure, and commercial framing honest.</p></div>""";
 
+    private static string ProductDepthSection() =>
+        """
+        <section class="section">
+          <div class="sh"><h2>Product depth</h2><div class="note">go-to-market · value architecture · proof</div></div>
+          <div class="depth-grid">
+            <article class="depth-card">
+              <div class="eyebrow">What this product does</div>
+              <h3>Batch Deviation CAPA Ledger turns quality events into a governed release-readiness packet.</h3>
+              <p>It gives QA, manufacturing, process excellence, quality systems, and release stakeholders one shared view of deviation evidence before root-cause gaps, unowned CAPAs, recurrence pressure, or missing disposition signoff weaken batch decisions.</p>
+              <ul>
+                <li><strong>For executives:</strong> shows where batch release exposure is building and which quality decisions need escalation.</li>
+                <li><strong>For operators:</strong> maps every deviation or CAPA gap to owner, control family, batch path, and next remediation move.</li>
+                <li><strong>For technical reviewers:</strong> ships a C# analyzer, minimal API, static proof pages, synthetic fixtures, screenshots, and CI verification.</li>
+              </ul>
+            </article>
+            <article class="depth-card">
+              <div class="eyebrow">What these repos have in common</div>
+              <h3>A repeatable Kinetic Gain control-plane pattern, not isolated compliance copy.</h3>
+              <p>Each repo packages a narrow operating problem as a buyer-readable product surface with evidence, data contracts, verification routes, screenshots, and deployment metadata.</p>
+              <ul>
+                <li>Named business lane with a board question, operating owner, and remediation motion.</li>
+                <li>Offline-safe sample data so the surface can prove value without exposing patient, batch, customer, credential, or production system data.</li>
+                <li>Public page, API routes, analyzer path, README, screenshots, and CI checks that support a real diligence trail.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        """;
+
     private static string Metric(string value, string label, string help, string tone) =>
         $$"""<div class="kpi {{tone}}"><div class="v">{{value}}</div><div class="lbl">{{label}}</div><div class="h">{{help}}</div></div>""";
 
@@ -227,6 +257,7 @@ public static class RenderService
             .section{margin-top:34px}.sh{display:flex;justify-content:space-between;gap:14px;padding-bottom:10px;border-bottom:1px solid var(--line2);margin-bottom:14px}.sh h2{margin:0;font-size:24px;font-weight:600}.sh .note{font-family:var(--mono);font-size:11px;color:var(--muted2);letter-spacing:.16em;text-transform:uppercase}
             .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}@media (max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}}@media (max-width:640px){.kpis{grid-template-columns:repeat(2,1fr)}} .kpi{border-radius:14px;padding:14px 14px 12px}.kpi .v{font-size:26px;font-weight:600}.kpi .lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:6px}.cyan .v{color:var(--bert2)} .green .v{color:var(--bert)} .plum .v{color:#b88cff} .amber .v,.yellow{color:var(--warn)} .red .v,.red{color:var(--bad)}
             .stack{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media (max-width:1100px){.stack{grid-template-columns:repeat(2,1fr)}}@media (max-width:640px){.stack{grid-template-columns:1fr}} .src{border-radius:16px;padding:16px}.src-name{font-family:var(--mono);font-size:11px;color:var(--bert);letter-spacing:.2em;text-transform:uppercase}.src-tit{margin:8px 0 6px;font-size:17px;font-weight:600}
+            .depth-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:14px}@media (max-width:900px){.depth-grid{grid-template-columns:1fr}}.depth-card{position:relative;overflow:hidden;border-radius:18px;padding:20px 22px;border:1px solid rgba(25,199,255,.22);background:linear-gradient(140deg,rgba(14,24,42,.96),rgba(9,16,30,.92));box-shadow:0 18px 60px rgba(0,0,0,.42)}.depth-card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--bert),var(--bert2),#b88cff)}.depth-card .eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--bert);margin-bottom:10px}.depth-card h3{margin:0 0 10px;font-size:22px;line-height:1.18}.depth-card p,.depth-card li{color:var(--muted);line-height:1.6}.depth-card ul{padding-left:18px;margin:12px 0 0}.depth-card strong{color:var(--text)}
             .ttbl{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}.ttbl th,.ttbl td{padding:13px 14px;text-align:left;font-size:13.5px;vertical-align:top}.ttbl thead th{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted2);border-bottom:1px solid var(--line);background:rgba(11,18,32,.5)}.ttbl td,.ttbl td *{color:var(--muted)}.ttbl b{color:var(--text)}
             .board{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}@media (max-width:1000px){.board{grid-template-columns:1fr}} .pcard{border-radius:16px;padding:18px 20px;display:flex;flex-direction:column}.ptop{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.pnum{font-family:var(--mono);font-size:22px;font-weight:600;color:var(--bert)}.ppri{font-size:10px;padding:5px 10px;border-radius:999px;border:1px solid var(--line);color:var(--bert);letter-spacing:.14em;background:rgba(55,255,139,.06)}.pcard h3{margin:6px 0 8px;font-size:19px}.check{list-style:none;padding:0;margin:0 0 14px}.check li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:6px 0;font-size:13.5px;color:var(--muted)}.check li:before{content:"";width:14px;height:14px;border:1px solid var(--line);border-radius:3px;background:rgba(6,10,18,.4);margin-top:3px}
             .st{font-size:10px;padding:4px 9px;border-radius:6px;letter-spacing:.1em;text-transform:uppercase;border:1px solid currentColor;display:inline-block}.st.green{color:var(--bert)}.st.yellow{color:var(--warn)}.st.red{color:var(--bad)}.st.info{color:var(--bert2)}
@@ -260,7 +291,9 @@ public static class RenderService
             <div class="footer">
               <div>batch-deviation-capa-ledger · synthetic sample data only</div>
               <div class="footer-links">
-                <a class="meta-chip" href="https://github.com/mizcausevic-dev/">GitHub</a>
+                <a class="meta-chip" href="https://github.com/mizcausevic-dev/batch-deviation-capa-ledger">Repo</a>
+                <a class="meta-chip" href="https://portfolio.kineticgain.com/">Portfolio</a>
+                <a class="meta-chip" href="https://suite.kineticgain.com/">Suite</a>
                 <a class="meta-chip" href="https://www.linkedin.com/in/mirzacausevic/">LinkedIn</a>
                 <a class="meta-chip" href="https://kineticgain.com/">Kinetic Gain</a>
               </div>
